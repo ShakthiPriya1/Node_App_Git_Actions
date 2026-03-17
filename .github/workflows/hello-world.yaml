@@ -1,8 +1,11 @@
 name: Node App Git Actions
 on: [push]
+on:
+  push:
+    branches: [ develop ]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World Action1
-        run: echo "Hello World from GitHub Actions! "
+        run: echo "Hello World from GitHub Actions! develop "
