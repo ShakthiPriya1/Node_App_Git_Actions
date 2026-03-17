@@ -4,5 +4,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World Action
+      - name: Hello World Action1
         run: echo "Hello World from GitHub Actions! "
