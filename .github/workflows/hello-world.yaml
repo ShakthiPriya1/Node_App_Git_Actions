@@ -1,11 +1,11 @@
 name: Node App Git Actions
 on:
-  push:
-    branches:
-      - develop
+  workflow_dispatch:
+  env:
+    SECRET_KEY: ${{ secrets.SECRET_KEY }}
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World Action
-        run: echo "Hello World from GitHub Actions!"
+        run: echo "Hello World from GitHub Actions! The SECRET_KEY is $SECRET_KEY"
