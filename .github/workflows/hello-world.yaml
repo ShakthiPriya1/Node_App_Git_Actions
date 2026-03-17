@@ -1,8 +1,5 @@
 name: Node App Git Actions
-on:
-  push:
-    branches:
-      - develop
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
